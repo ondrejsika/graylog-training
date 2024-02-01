@@ -89,6 +89,18 @@ make stdin-loggen
 
 See the logs in Graylog
 
+## Docker Logs Using Filebeat
+
+Try Docker example from `examples/filebeat` on Linux machine.
+
+```
+cd examples/filebeat
+```
+
+```
+make docker
+```
+
 ## Install ECK
 
 ECK (Elastic Cloud on Kubernetes) is operator for Kubernetes to run Elasticsearch, Kibana and APM Server.
