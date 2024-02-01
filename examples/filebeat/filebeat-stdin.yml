@@ -1,0 +1,5 @@
+filebeat.inputs:
+  - type: stdin
+
+output.logstash:
+  hosts: ["graylog.sikademo.com:5044"]
