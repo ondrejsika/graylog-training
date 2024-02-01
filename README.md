@@ -104,3 +104,17 @@ helm install \
   --create-namespace \
   --wait
 ```
+
+## Filebeat in Kubernetes
+
+See example in `examples/eck/filebeat`
+
+Install ECK first (see above).
+
+```
+cd examples/eck/filebeat
+```
+
+```
+kubectl apply -f .
+```
