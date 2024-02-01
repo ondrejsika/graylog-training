@@ -65,3 +65,26 @@ systemctl restart rsyslog
 ```
 
 See the logs in Graylog
+
+## Beats Input
+
+- [Docs: Getting in Logs](https://go2docs.graylog.org/5-2/getting_in_log_data/getting_in_log_data.html)
+- [Docs: Beats](https://go2docs.graylog.org/5-0/getting_in_log_data/beats.html)
+
+Create Beats Input on port `5044` (System > Inputs > Select Input > Beats).
+
+http://graylog.sikademo.com:9000/system/inputs
+
+![graylog-beats-input](images/graylog-beats-input.png)
+
+Try example from `examples/filebeat`
+
+```
+cd examples/filebeat
+```
+
+```
+make stdin-loggen
+```
+
+See the logs in Graylog
