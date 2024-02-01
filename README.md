@@ -37,6 +37,9 @@ See `docker compose logs` for initial password.
 
 ## Syslog TCP Input
 
+- [Docs: Getting in Logs](https://go2docs.graylog.org/5-2/getting_in_log_data/getting_in_log_data.html)
+- [Docs: Ingest Syslog](https://go2docs.graylog.org/5-0/getting_in_log_data/ingest_syslog.html)
+
 Create Syslog TCP Input on port `5140` (System > Inputs > Select Input > Syslog TCP).
 
 http://graylog.sikademo.com:9000/system/inputs
