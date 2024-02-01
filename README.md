@@ -88,3 +88,19 @@ make stdin-loggen
 ```
 
 See the logs in Graylog
+
+## Install ECK
+
+ECK (Elastic Cloud on Kubernetes) is operator for Kubernetes to run Elasticsearch, Kibana and APM Server.
+
+- [Docs: Install ECK using the Helm chartedit](https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-install-helm.html)
+
+```
+helm install \
+  elastic-operator \
+  --repo https://helm.elastic.co \
+  eck-operator \
+  -n elastic-system \
+  --create-namespace \
+  --wait
+```
