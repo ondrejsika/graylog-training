@@ -1,0 +1,14 @@
+filebeat.inputs:
+  - type: stdin
+
+processors:
+  - decode_json_fields:
+      fields: ["message"]
+      process_array: true
+      max_depth: 2
+      target: ""
+      overwrite_keys: true
+      add_error_key: true
+
+output.logstash:
+  hosts: ["graylog.sikademo.com:5044"]
