@@ -131,6 +131,18 @@ cd examples/eck/filebeat
 kubectl apply -f .
 ```
 
+## Run `slu loggen` in Kubernetes
+
+```
+helm upgrade --install \
+  loggen \
+  loggen --repo https://helm.sikalabs.io \
+  -n loggen \
+  --create-namespace \
+  --set replicas=2 \
+  --wait
+```
+
 ## SMTP Configuration
 
 ```
